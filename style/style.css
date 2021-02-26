@@ -106,6 +106,10 @@ nav a{
     position: relative;
 }
 
+#heroImageContent p{
+    color: #fff;
+}
+
 #moreNews{
     width: 600px;
     height: 600px;
