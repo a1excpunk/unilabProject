@@ -13,9 +13,9 @@
 </head>
 <body>
     <header>
-      <a href="./index.html"  id="Hlogo">logo</a>
+      <a href="../index.html"  id="Hlogo">logo</a>
         <nav>
-          <a href="./index.html" id="current">home</a>
+          <a href="../index.html" id="current">home</a>
           <a href="#">discovery</a>
           <a href="#">photos</a>
           <a href="#">contact</a>
@@ -23,7 +23,93 @@
         </nav>
     </header>
 
-    <main></main>
+    <main>
+      <div class="routing">
+        <a href="../index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+            <path id="home" d="M0,8,8,0l8,8v8H11V10H5v6H0Z" fill="#202124" fill-rule="evenodd"/>
+          </svg>
+        </a>
+        <a href="#" id="current">story <span class="routingSlash">/</span></a> <a href="#">worlds news</a>
+        <div class="filter">        
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+           <path id="filter" d="M16,1V3H5.7A1.945,1.945,0,0,1,2.3,3H0V1H2.3A1.945,1.945,0,0,1,5.7,1ZM12,6a1.936,1.936,0,0,0-1.7,1H0V9H10.3a1.945,1.945,0,0,0,3.4,0H16V7H13.7A1.936,1.936,0,0,0,12,6ZM8,12a1.936,1.936,0,0,0-1.7,1H0v2H6.3a1.945,1.945,0,0,0,3.4,0H16V13H9.7A1.936,1.936,0,0,0,8,12Z" fill="#575f66"/>
+        </svg> 
+        </div>
+    
+      </div>
+
+      <article class="worldNewsSearch">
+
+        <div class="worldNewsSearchCard">
+          <div class="worldNewsSearchImage">
+            <img src="../assets/images/Image6.png" alt="lake and sandy mountains">
+          </div>
+
+          <div class="worldNewsSearchText">
+            <h2>world news</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto vidit.</p>
+            <div class="worldNewsSearchAvatar">
+              <img src="../assets/images/avatar.png" alt="avatar photo">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="worldNewsSearchCard">
+          <form action="#">
+            <svg class="dropdown" xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6">
+              <path id="dropdown" d="M5,6a.908.908,0,0,1-.7-.3l-4-4A.967.967,0,0,1,.3.3.967.967,0,0,1,1.7.3L5,3.6,8.3.3A.967.967,0,0,1,9.7.3a.967.967,0,0,1,0,1.4l-4,4A.908.908,0,0,1,5,6Z" transform="translate(0 0)" fill="#a6adb4"/>
+            </svg>          
+            <label for="date">Select a date</label>
+            <select name="date" id="date" >
+              <option selected>Select...</option>
+              <option>01/01/2021</option>
+              <option>02/01/2021</option>
+              <option>03/01/2021</option>
+              <option>04/01/2021</option>
+              <option>05/01/2021</option>
+              <option>06/01/2021</option>
+              <option>07/01/2021</option>
+              <option>08/01/2021</option>
+              <option>09/01/2021</option>
+              <option>10/01/2021</option>
+            </select>
+            <label for="keyword">Enter the first keywords</label>
+            <input type="text" id="keyword">
+            <button>search</button>
+          </form>
+        </div>
+      </article>
+
+      <article class="aboutAuthor">
+        <div>
+          <img src="../assets/images/avatar.png" alt="avatar photo">
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        </div>
+        
+        <p>Dignissim rutrum ridiculus lacinia phasellus torquent ad aliquet, nisi dictum cubilia class habitasse commodo, semper potenti nec ac per egestas. Ac volutpat ullamcorper phasellus montes sollicitudin litora ridiculus mi conubia inceptos euismod odio curabitur, tortor eros porta venenatis facilisis quam blandit in ut lobortis consequat justo. Hac libero quisque tortor conubia iaculis</p>
+
+        <div>
+          <p>Nascetur himenaeos morbi gravida porta sapien justo aliquam pellentesque dapibus curae, cursus ultrices suspendisse cras ligula id aenean vulputate taciti, eleifend eros bibendum scelerisque lobortis venenatis nulla tristique tempus. Quisque eleifend vulputate.</p> 
+          <div class="addingTime">
+            <svg class="clock" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+              <path id="Path_5" data-name="Path 5" d="M8,0a8,8,0,1,0,8,8A8.024,8.024,0,0,0,8,0ZM8,14a6,6,0,1,1,6-6A6.018,6.018,0,0,1,8,14ZM9,7.6l2.7,2.7-1.4,1.4L7,8.4V3H9Z" fill="#cbd0d3"/>
+            </svg>
+            <p class="addingTimeText">2 min ago</p>
+          </div>
+
+        </div>
+      </article>
+
+      <article class="story">
+        <img src="../assets/images/elephantBig.png" alt="elephant">
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis, mollis viverra conubia ligula inceptos laoreet libero tortor, nascetur non habitasse iaculis tempor nec egestas fames augue, platea porta integer nostra curae sed arcu. Nec ut diam vulputate ante scelerisque ridiculus lobortis orci mi curae himenaeos quis, senectus curabitur ullamcorper a porttitor nibh fermentum nisi cum morbi aliquam. Vitae pretium vestibulum dui gravida in potenti interdum, class rhoncus neque eget magna at
+          <br><br>
+          Ullamcorper porttitor non pharetra cursus nisl mollis pellentesque primis penatibus platea, dictum himenaeos eget mi bibendum ad molestie aliquet curae quis quisque, nunc duis ac at elementum dui integer viverra tempus. Lacinia bibendum diam senectus egestas nec molestie convallis aenean hac tempus, vivamus purus congue euismod fringilla cursus donec est eu blandit platea, feugiat vitae netus orci habitant accumsan placerat morbi nostra.</p>
+      </article>
+    </main>
     
     <footer>
         <div id="footerText">
