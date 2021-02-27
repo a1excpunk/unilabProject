@@ -369,6 +369,11 @@ label{
     align-self: flex-start;
 }
 
+
+
+
+
+
 /* Navigation 2 */
 
 .routing{
@@ -485,13 +490,6 @@ label{
     padding-left: 20px;
 }
 
-.dropdown{
-    position: absolute;
-    right: -35px;
-    top: 45px;
-    cursor: pointer;
-}
-
 .worldNewsSearchCard button{
     width: 135px;
 }
@@ -551,3 +549,256 @@ label{
     width: 760px;
     margin-top: 40px;
 }
+
+
+.tabletPages{
+    display: none;
+}
+
+/* TABLET */
+
+@media (max-width:768px){
+    body{
+        width: 100%;
+    }
+
+
+    main{
+        width: 100%;
+    }
+
+    #hero{
+        width: 100%;
+
+    }
+
+    #heroImageContent{
+        width: 100%;
+    }
+
+    #heroImageText h2{
+        width: 50%;
+    }
+
+    #mainInfo{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #moreNews{
+        width: 100%;
+    }
+
+
+
+
+    #tranding{
+        width: 80%;
+        margin: 40px 80px;
+    }
+
+    .trendingCard{
+        width: 284px;
+        height: 350px;
+    }
+
+    .trendingCardImage{
+        width: 70%;
+    }
+
+    .trendingCardImage img{
+        width: 284px;
+        height: 180px;
+    }
+
+    .trendingCard:last-of-type{
+        display: none;
+    }
+
+
+
+    #happaningNow{
+        width: 608px;
+        margin: 0 80px;
+    }
+
+    .happaningNowCard img{
+        width: 608px;
+        height: 430px;
+    }
+
+    .happaningNowText{
+        width: 528px;
+    }
+
+    .happaningNowText h3:first-of-type{
+        margin-bottom: 180px;
+
+    }
+
+
+
+
+
+    #storyCards{
+        position: static;
+        display: flex;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    .storyCard{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .storyCard:last-of-type{
+        display: none;
+    }
+
+    .storyCard img{
+        width: 284px;
+    }
+
+    .storyCard h4, .addingTime{
+        display: inline-block;
+    }
+
+
+
+    
+    footer{
+        width: 100%;
+        height:316px;
+        flex-direction: column;
+        gap: 70px;
+        padding: 55px 80px;
+        box-sizing: border-box;
+    }
+
+    #footerText{
+        gap: 250px;
+        width: 100%;
+    }
+    
+    #footerLinks a{
+        padding-right: 30px;
+        padding-bottom: 10px;
+    }
+
+    form{
+        right: 180px;
+    }
+
+    #socialMedia{
+        align-self: flex-end;
+        position: relative;
+        bottom: 100px;
+    }
+
+
+
+    .routing{
+        width: 608px;
+        margin: 40px auto;
+    }
+
+
+
+    .worldNewsSearch{
+        flex-direction: column;
+        height: 800px;
+    }
+
+
+    .worldNewsSearchImage img,.worldNewsSearchCard,.aboutAuthor, .story{
+        margin: auto;
+    }
+
+    .worldNewsSearchCard form{
+        position: static;
+        width: 446px;
+        margin: 80px;
+    }
+
+    .worldNewsSearchCard input, .worldNewsSearchCard select, .worldNewsSearchCard button, .worldNewsSearchCard label{
+        margin: 0 0 0 120px;
+    }
+
+    .worldNewsSearchCard label{
+        margin-top: 30px;
+    }
+
+    .worldNewsSearchCard button{
+        width: 152px;
+        margin-top: 30px;
+    }
+
+    .worldNewsSearchCard form, .worldNewsSearchImage img,.worldNewsSearchCard{
+        width: 608px;
+        height: 400px;
+    }
+
+    .aboutAuthor, .story, .story img, .story p{
+        width: 608px;
+    }
+
+
+
+
+    .aboutAuthor{
+        width: 608px;
+        height: 465px;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 0;
+        position: relative ;
+
+    }
+
+    .aboutAuthorText{
+        display: flex;
+    }
+
+    .aboutAuthorText p,.aboutAuthorText div{
+        width: 284px;
+    }
+
+    .aboutAuthor p:first-of-type{
+        padding-left: 0;
+    }
+
+    .aboutAuthor div:first-of-type{
+        margin-left: 0;
+        width: 284px;
+    }
+    
+    .story p, .story{
+        margin-bottom: 40px;
+    }
+
+
+
+    .tabletPages{
+        display: block;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .pages{
+        font-size: 11px;
+        color: #A6ADB4;
+        padding: 10px 0;
+        margin-right: 15px;
+    }
+
+    .currentPage{
+        border-bottom: 2px solid #FA6980;
+        color: #202124;
+        font-weight: 600;
+    }
+}
+
+/* MOBILE */
+
