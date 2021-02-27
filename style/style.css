@@ -507,7 +507,11 @@ label{
     width: 1160px;
     height: 253px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr 2fr;
+}
+
+.aboutAuthorText{
+    display: flex;
 }
 
 .aboutAuthor p{
