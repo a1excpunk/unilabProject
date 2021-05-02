@@ -16,6 +16,10 @@ body {
   align-items: center;
 }
 
+.mobile-only {
+  display: none;
+}
+
 p {
   line-height: 20px;
   margin: 10px 0;
@@ -75,7 +79,7 @@ a {
   justify-content: space-between;
 }
 
-
+/* footer */
 footer {
   display: flex;
   justify-content: space-evenly;
@@ -129,7 +133,7 @@ form {
 }
 
 #mail {
-    padding: 10px;
+  padding: 10px;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 6px;
@@ -161,9 +165,6 @@ label {
   display: flex;
   gap: 30px;
 }
-
-
-
 
 /* HEADER */
 header {
@@ -373,4 +374,162 @@ nav a {
 
 a.articleAuthor {
   text-decoration: underline;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 960px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: inline-block;
+  }
+
+  /* heading */
+  header {
+    padding: 0 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 10;
+    right: 50px;
+    top: 40px;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+  }
+
+  nav a:hover {
+    background-color: #dfdfdf;
+  }
+
+  .burger-menu {
+    align-self: center;
+    cursor: pointer;
+  }
+
+  /* Main Content */
+  #mainInfo {
+    flex-direction: column;
+  }
+
+  #heroImageContent {
+    width: 100%;
+  }
+
+  #heroImageText {
+    top: 75px;
+    left: 40px;
+  }
+
+  #heroImageText h2 {
+    width: 100%;
+  }
+
+  /* more news */
+
+  #moreNews {
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Tranding */
+  .trending {
+    top: 400px;
+    padding: 20px;
+  }
+
+  #trendingCards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .trendingCard {
+    width: 100%;
+    height: auto;
+  }
+
+  .trendingCardImage {
+    width: 100%;
+    height: auto;
+  }
+
+  .trendingCardText {
+    height: auto;
+    padding: 10px 20px 0 20px;
+  }
+
+  /* Happaning Now */
+
+  #happaningNow {
+    width: 100%;
+    padding: 0 20px;
+    top: 500px;
+  }
+
+  .happaningNowImage {
+    width: 100%;
+  }
+
+  .happaningNowText {
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    font-size: 1em;
+  }
+
+  .happaningNowText h4 {
+    margin: 0;
+    padding: 20px 0;
+  }
+  .happaningNowText h3 {
+    font-size: 1.2em;
+  }
+
+  .happaningNowText p:not(.addingTimeText) {
+    font-size: 1em;
+  }
+
+  /* Stories */
+
+  #storyCards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1100px;
+    padding: 20px;
+  }
+
+  .storyCard{
+    width: 100%;
+  }
+
+  .storyCardImage img{
+    width: 100%;
+  }
+
+
+  /* footer */
+  footer {
+    flex-direction: column;
+    height: 400px;
+    margin-top: 1600px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .trending {
+    top: 500px;
+  }
 }

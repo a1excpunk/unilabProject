@@ -9,7 +9,6 @@
   <meta name="keywords" content="travel, world, news">
   <meta name="author" content="Aleksandra Sauri">
   <link rel="stylesheet" href="./style/style.css">
-  <link rel="stylesheet" href="./style/responsive.css">
   <script src="./js/script.js" defer></script>
   <title>Tavel</title>
 </head>
@@ -17,13 +16,26 @@
 <body>
   <header>
     <a href="index.html" id="Hlogo">logo</a>
-    <nav class="flex-space-between">
+    <nav class="flex-space-between desktop-only">
       <a href="index.html" id="active">home</a>
-      <a href="./html/discovery.html">discovery</a>
-      <a href="./html/photos.html">photos</a>
-      <a href="./html/contact.html">contact</a>
+      <a href="#">discovery</a>
+      <a href="#">photos</a>
+      <a href="#">contact</a>
       <a href="#"><img src="./assets/images/christopher-campbell-28567-unsplash.png" alt="profile photo"></a>
     </nav>
+    <div class="mobile-only burger-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="14.001" viewBox="0 0 16 14.001">
+        <defs>
+          <clipPath id="clip-path">
+            <rect width="16" height="14.001" fill="none"/>
+          </clipPath>
+        </defs>
+        <g id="menu_icon" data-name="menu icon" clip-path="url(#clip-path)">
+          <path id="menu_icon-2" data-name="menu icon" d="M-6407-6020a1,1,0,0,1-1-1,1,1,0,0,1,1-1h14a1,1,0,0,1,1,1,1,1,0,0,1-1,1Zm0-6a1,1,0,0,1-1-1,1,1,0,0,1,1-1h8a1,1,0,0,1,1,1,1,1,0,0,1-1,1Zm0-6a1,1,0,0,1-1-1,1,1,0,0,1,1-1h14a1,1,0,0,1,1,1,1,1,0,0,1-1,1Z" transform="translate(6408 6034)" fill="#343638"/>
+        </g>
+      </svg>
+      
+    </div>
   </header>
   <main>
     <article id="mainInfo">
@@ -93,7 +105,7 @@
       </div>
     </article>
 
-    <article class="container">
+    <article class="container trending">
       <div class="flex-between">
         <h2>trending</h2>
         <div class="arrows">
@@ -204,9 +216,7 @@
           <div class="happaningNowText">
             <h4>city</h4>
             <h3>Large article title</h3>
-            <p>Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id.
-              Affert
-              detraxit voluptatum vis eu, inermis eloquentiam.</p>
+            <p>Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto.</p>
             <div class="addingTime">
               <svg class="clock" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <path id="Path_5" data-name="Path 5"
@@ -225,9 +235,7 @@
           <div class="happaningNowText">
             <h4>travel</h4>
             <h3>Large article title</h3>
-            <p>Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id.
-              Affert
-              detraxit voluptatum vis eu, inermis eloquentiam.</p>
+            <p>Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto.</p>
             <div class="addingTime">
               <svg class="clock" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <path id="Path_5" data-name="Path 5"
@@ -243,7 +251,7 @@
       <div id="storyCards">
 
         <div class="storyCard">
-          <a href="./html/story.html">
+          <a href="#">
             <div class="storyCardImage">
               <img src="./assets/images/elephant.png" alt="elephant">
             </div>
