@@ -1,14 +1,14 @@
-let burgerMenu  = document.querySelector('.burger-menu');
-let navigation = document.querySelector('nav')
-burgerMenu.addEventListener('click', function(){
-   if(navigation.classList.contains('desktop-only')){
-       navigation.classList.remove('desktop-only')
-       burgerMenu.style.transform = 'rotate(90deg)'
-       burgerMenu.style.transitionDuration= '500ms'
-
-   } else{
-       navigation.classList.add('desktop-only')
-       burgerMenu.style.transform = 'rotate(0deg)'
-
-   }
-})
+let burgerMenu = document.querySelector('.burger-menu');
+let navigation = document.querySelector('nav');
+let bars = document.querySelector('.bars');
+burgerMenu.addEventListener('click', function () {
+    if (navigation.classList.contains('desktop-only')) {
+        navigation.classList.remove('desktop-only');
+        burgerMenu.classList.add('exitBtn');
+        bars.style.visibility = 'hidden';
+    } else {
+        navigation.classList.add('desktop-only')
+        burgerMenu.classList.remove('exitBtn');
+        bars.style.visibility = 'visible';
+    }
+});
